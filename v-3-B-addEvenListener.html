@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of addEvenListener</title>
+</head>
+<body>
+   <!-- Group A start  -->
+   <!-- Group A start  -->
+
+       <!-- total three ways discuss about addEvenListener -->
+   <!-- total three ways discuss about addEvenListener -->
+
+    <!-- how to set addEvenListener to click a button so that button work   -->
+    <!-- example :: 1 --> 
+   <h1 style="color:green ;text-align:center">This is a Primary School </h1>
+   <button id="tomatoButton">make me : golden</button>
+ 
+ 
+     <!-- example :: 2 --> 
+     <button id="grayButton">make me : gray</button>
+ 
+     <!-- example :: 3    shortCut --> 
+     <button id="lightBlue">make me : lightBlue</button>
+ 
+ <!-- handle by using addEvenListener -->
+
+   <!-- Group A end -->
+   <!-- Group A end -->
+
+
+   <!-- Group B start for Practice -->
+   <!-- Group B start for Practice -->
+   <h1 style="color:green ;text-align:center">this is a public College in d/d pur</h1>
+
+
+    <!-- example : 1 -->
+   <button id="pinkButton">make me : pink</button>
+
+    <!-- example : 2 -->
+   <button id="blackButton">make me : black</button>
+
+    <!-- example : 3 -->
+   <button id="blueButton">make me : blue</button>
+
+
+   <!-- Group B end for Practice -->
+   <!-- Group B end for Practice -->
+  
+    <script>
+        // Group A start -->
+        // Group A start -->
+         
+        // example :: 1
+        const makeTomatoButton = document.getElementById('tomatoButton');
+        makeTomatoButton.addEventListener('click',makeTomato);
+        function makeTomato(){
+            document.body.style.backgroundColor = 'tomato'
+        }
+        // example :: 2
+        const makeGrayButton = document.getElementById('grayButton');
+        makeGrayButton.addEventListener('click', function makeGray(){
+       
+            document.body.style.backgroundColor = 'gray'
+        
+        })
+        // example :: 3 shortCut is more useful for our tasks
+        document.getElementById('lightBlue').addEventListener
+        ('click',function(){
+            document.body.style.backgroundColor = 'lightblue'
+        
+        })
+        // Group A end -->
+        // Group A end -->
+
+
+
+        // Group B start for Practice 
+        // Group B start for Practice 
+        // exp: 1
+const blue = document.getElementById('pinkButton');
+    blue.addEventListener ('click',makePink);
+    function makePink(){
+        document.body.style.backgroundColor = 'pink';
+    }
+
+    // exp: 2
+ const black = document.getElementById('blackButton');
+ black.addEventListener( 'click' , function makeBlack(){
+    document.body.style.backgroundColor = 'black';
+ })
+
+
+
+    // exp: 3
+
+document.getElementById('blueButton').addEventListener('click',function (){
+    document.body.style.backgroundColor = " blue"
+});
+
+        // Group B end for Practice 
+        // Group B end for Practice 
+       
+    </script>
+    <!-- <script src="js.js"></script>
+</body>
+</html>

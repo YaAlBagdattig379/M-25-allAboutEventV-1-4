@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of set event handler</title>
+</head>
+<body>
+   <!-- Group : A  start -->
+   <!-- Group : A  start -->
+
+  <!-- onclick example ::: 1 -->
+  <p id="clicking-method"></p>
+  <button onclick='clickingMethod()'>textButton 01</button>
+  <!-- <button id="button3">textButton 02</button> -->
+
+   <!-- shortCut example ::: 2 -->
+  <button id='handleEvent'>shortCut 02</button>
+
+   <!-- shortCut example ::: 3 -->
+   <h1 id="guru"></h1>
+  <button id='handleEventButton'>shortCut 03</button>
+
+
+   <!-- Group : A  end -->
+   <!-- Group : A  end -->
+   <!-- Group : B  start for practice-->
+   <!-- Group : B  start for practice-->
+  
+   <!-- egp: 1 -->
+   <p id="paragraph"></p>
+   <button onclick="clinkingTechnique()">Hero Alam</button> 
+  
+   <!-- egp: 2 -->
+   <button id="vahoiya">vagoi</button> 
+  
+   <!-- egp: 3 -->
+   <h2 id="strongMind"></h2>
+   <button id="mind">strong</button> 
+
+   <!-- Group : B  end -->
+   <!-- Group : B  end -->
+   
+    <script>
+      //Group : A  start
+      //Group : A  start
+
+ //  <!-- onclick example ::: 1 -->
+ function clickingMethod(){
+           const prothom = document.getElementById("clicking-method"); 
+           prothom.innerText = 'set by using my technique';
+           console.log(prothom);
+        } 
+
+    //  <!-- shortCut / direct example ::: 2 -->
+    document.getElementById('handleEvent').addEventListener('click',function(){
+       const directShort = document.getElementById('clicking-method');
+       directShort.innerText = 'text by myself'
+    });
+
+    //  <!-- shortCut / direct example ::: 3 -->
+    document.getElementById('handleEventButton').addEventListener('click',function(){
+       const directShortTech = document.getElementById('guru');
+       directShortTech.innerText = 'This is Guru'
+    });
+
+
+    //Group : A  end
+      //Group : A  end
+
+
+
+      //Group : B  start
+      //Group : B  start
+       
+      // egp: 1
+ function clinkingTechnique(){
+   const para = document.getElementById('paragraph');
+   para.innerText = 'this is fan of "Hero Alam"'
+ }
+       
+      // egp: 2
+ document.getElementById('vahoiya').addEventListener('click',function(){
+   const marChokka = document.getElementById("paragraph");
+   marChokka.innerText = "also this vagoiya fan"
+
+ });
+ 
+       
+      // egp: 3
+ document.getElementById('mind').addEventListener('click',function(){
+   const morMind = document.getElementById("strongMind");
+   morMind.innerText = "make habits to take any nagitivity as a positivity"
+
+ });
+ 
+      //Group : B  end
+      //Group : B  end
+
+    </script>
+
+      
+   
+    <!-- <script src="js.js"></script> -->
+</body>
+</html>

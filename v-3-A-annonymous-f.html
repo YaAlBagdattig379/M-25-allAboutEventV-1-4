@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of different event handler by js</title>
+</head>
+<body>
+  <header>
+      <!-- Group - A  start -->
+  <!-- Group - A  start -->
+  <!-- how to use annonymous function-->
+
+  <!-- this normal a private school only for who are in  x standard -->
+  <h1 style="color:green;text-align:center"> Cholo Jai Primari School a  </h1>
+
+
+  <button id="makeBrown">make brown<button>
+
+
+      <br>
+
+  <button id="makeRed">make red<button>
+
+  <!-- Group - A  end -->
+  <!-- Group - A  end -->
+
+  </header>
+  
+
+<main style="margin-top:30px ;">
+ <!-- Group - B  start for practice -->
+  <!-- Group - B  start for practice -->
+  <h1 style="color:rgb(38, 0, 128);text-align:center"> "Konthe goru ailo re jomor dhan sob khailore <br> massa chachi kone gelo re"   </h1>
+  <button id="make-salmon">make salmon</button> 
+  <button id="make-black">make black</button>
+   <!-- Group - B  end for practice -->
+   <!-- Group - B  end for practice -->
+</main>
+
+<script>
+// for Group - A start 
+// for Group - A start 
+    const makeButtonBrown = document.getElementById('makeBrown');
+
+//   function-);
+  makeButtonBrown.ondblclick = function helloBrown(){
+  document.body.style.backgroundColor = 'brown';
+}
+
+// example :: 2
+//  annonymous function-);
+const makeButtonRed = document.getElementById('makeRed');
+
+//  annonymous function-);
+makeButtonRed.ondblclick = function (){
+  document.body.style.backgroundColor = 'red';
+}
+      // for Group - A end
+      // for Group - A end
+
+
+
+      // for Group - B start
+      // for Group - B start
+
+      // example 1 no. btn
+const makeSalmon =  document.getElementById('make-salmon');
+makeSalmon.onclick = function salonColor(){
+  document.body.style.backgroundColor = 'salmon'
+}
+
+
+      //example 2 no. btn
+      const makeBlack = document.getElementById("make-black");
+      makeBlack.onclick = function blackColor(){
+        document.body.style.backgroundColor = 'black'
+      }
+
+      // for Group - B end
+      // for Group - B end
+     
+</script> 
+
+   
+</body>
+</html>

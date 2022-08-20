@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of onclock handler directly or via javscript</title>
+</head>
+<body>
+    <!-- Group - A button tita tipi start-->
+    <!-- Group - A button tita tipi start-->
+
+    <h1>butto niya tipa tipi</h1>
+     <!-- 1 btn for pink only click-->
+    <button onclick="document.body.style.backgroundColor=('pink')">hello click :make me pink</button>
+
+    <!-- 2 btn for  green using function   -->
+    <button onclick="makeGreen()">green me </button>
+
+    <!-- 3 btn for make yellow  by id using eventhandler -->
+    <button id="makeYellow"> make me yellow</button>
+    
+    <!-- Group - A button tita tipi end-->
+    <!-- Group - A button tita tipi end-->
+
+  <!--Group - B button tita tipi start for practice
+      Group - B button tita tipi start for practice-->
+     
+    <h1>Button niya tipa tipi more </h1>
+       <!-- 1 button  -->
+    <button onclick="document.body.style.backgroundColor=('red')">hit me for red</button>
+
+       <!-- 2 button  -->
+    <button onclick="makeSalmon()">hit me for salmon</button>
+    
+   <!--  3 button -- -->
+    <button id="makeBrownColor">hit me for brown</button> 
+<script>
+      // for Group A start 
+      // for Group A start
+
+      // example :: 2 btn for green using function 
+       function makeGreen(){
+           document.body.style.backgroundColor='green';
+      }
+      // example :: 3 btn for make yellow using eventHandler 
+
+      const myButtonId = document.getElementById('makeYellow')
+      // set just for funtion name 
+      myButtonId.onclick = makeYellow;
+      function makeYellow(){
+      document.body.style.backgroundColor = 'yellow'
+      }
+
+       // for Group A end 
+       // for Group A end 
+
+
+      // for Group B start for practice 
+      // for Group B start for practice 
+
+ 
+      //example:: 2 btn for using function
+      function makeSalmon(){
+        document.body.style.backgroundColor = "salmon"
+      }
+      //example:: 3 btn using id eventhandler 
+      const makeButtonBrown = document.getElementById('makeBrownColor');
+      makeButtonBrown.onclick = makeBrownColor;
+      function makeBrownColor(){
+        document.body.style.backgroundColor = "brown";
+      }
+      // for Group B end for practice 
+      // for Group B end for practice 
+</script>
+
+</body>
+</html>

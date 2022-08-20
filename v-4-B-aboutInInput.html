@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of inut value</title>
+</head>
+<body>
+
+  <!-- Group : A start  -->
+  <!-- Group : A start  -->
+
+  <!-- how to set update button in this way in here  -->
+     <!-- how to set update button in this way in here  -->
+ <!-- example :: 1 -->
+ <p id="clicking-method"></p>
+
+ <input id="name-field"type="text">
+
+ <button id="update-name">update 01</button>
+
+<!-- example :: 2-->
+  <!-- <p id="clicking-manner"></p>
+
+ <input id="name-fieldsId"type="text">
+
+ <button id="update-name2">update 02</button> -->
+
+  <!-- Group : A end  -->
+  <!-- Group : A end  -->
+
+
+
+  <!-- Group : B start   -->
+  <!-- Group : B start   -->
+  <h3 id="crazyMon"></h3>
+  <input id="inputType" type="text">
+  <button id="updateMe"> update me</button>
+  <!-- Group : B end  -->
+  <!-- Group : B end  -->
+
+    <script>
+       //  <!-- Group : A start  -->
+       //  <!-- Group : A start  -->
+
+// example :: 1
+document.getElementById('update-name').addEventListener('click',function(){
+          const namefieldMy = document.getElementById('name-field');
+          const ProthomPrem = document.getElementById('clicking-method');
+          ProthomPrem.innerText = namefieldMy.value;
+          namefieldMy.value = ' ';
+        console.log(Prohom22);
+      })
+
+       //  <!-- Group : A end  -->
+       //  <!-- Group : A end  -->
+
+
+
+       //  <!-- Group : B start  -->
+       //  <!-- Group : B start  -->
+
+       document.getElementById('updateMe').addEventListener('click',function(){
+        const inputArea = document.getElementById("inputType");
+        const updateArea = document.getElementById("crazyMon");
+        updateArea.innerText = inputArea.value;
+        inputArea.value = ' ';
+       })
+       //  <!-- Group : B end  -->
+       //  <!-- Group : B end  -->
+
+ 
+    </script>
+    <!-- <script src="js.js"></script> -->
+</body>
+</html>
